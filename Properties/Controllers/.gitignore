@@ -1,0 +1,53 @@
+# Основные сборочные файлы
+bin/
+obj/
+
+# Файлы пакетов NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Файлы сборки Mono
+*.pidb
+*.mdb
+*.opendb
+
+# Файлы компиляции Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Конфигурации
+*.local
+*.cache
+*.idea/
+.idea/
+
+# Логи
+*.log
+
+# Промежуточные файлы
+*.ilk
+*.ipch
+*.obj
+*.pch
+*.pdb
+*.idb
+*.tlog
+*.tmp
+
+# Файлы публикации
+*.Publish.xml
+
+# Конфигурация сред разработки
+*.ide.*
+*.ide
+
+# Пакеты и зависимости
+packages/
+node_modules/
