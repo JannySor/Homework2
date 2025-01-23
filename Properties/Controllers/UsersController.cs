@@ -9,7 +9,7 @@ public class UsersController : ControllerBase
 {
     public static List<User> _users = new List<User>();
     static int lastId = 0;
-    [HttpPost]
+    [HttpPost("add")]
     public IActionResult AddUser(string name)
     {
         _users.Add(new User(name, ++lastId, false));
@@ -20,7 +20,7 @@ public class UsersController : ControllerBase
     {
         return Ok(_users);
     }
-    [HttpDelete]
+    [HttpDelete("delete")]
     public IActionResult DeleteUser(int id)
     {
         int index = _users.FindIndex(user => user.Id == id);

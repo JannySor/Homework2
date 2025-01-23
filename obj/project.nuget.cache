@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GgAQJC1Nmyo=",
+  "dgSpecHash": "4KwpMUjS9Ys=",
   "success": true,
-  "projectFilePath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj",
+  "projectFilePath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/homework2.csproj",
   "expectedPackageFiles": [
     "/Users/janny/.nuget/packages/microsoft.aspnetcore.openapi/8.0.5/microsoft.aspnetcore.openapi.8.0.5.nupkg.sha512",
     "/Users/janny/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

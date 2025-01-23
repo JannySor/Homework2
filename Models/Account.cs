@@ -1,3 +1,5 @@
+namespace lesson2.Models;
+
 public class Account(int simpleId, string name, int userId, double balance)
 {
     public int SimpleId { get; set;} = simpleId;

@@ -9,10 +9,11 @@ public class AccountsController : ControllerBase
 
 {
     public static List<Account> _accounts = new List<Account>();
-    [HttpPost]
+    
+    [HttpPost("create")]
     public IActionResult CreateAccount(string name, int userId)
     {
-        User? user = UsersController._users.FirstOrDefault(user => user.Id == userId);
+        var user = UsersController._users.FirstOrDefault(user => user.Id == userId);
         if (user == null) 
         {
             return NotFound($"Юзер с id {userId} не найден");
@@ -24,7 +25,12 @@ public class AccountsController : ControllerBase
         return Ok();
     }
     [HttpGet]
-    public IActionResult GetAccountsByID(int userId)
+    public IActionResult GetAccounts()
+    {
+        return Ok(_accounts);
+    }
+    [HttpGet("byId")]
+    public IActionResult GetAccountsById(int userId)
     {
         User? user = UsersController._users.FirstOrDefault(user => user.Id == userId);
         if (user == null) 
@@ -33,12 +39,12 @@ public class AccountsController : ControllerBase
         }
         if (user.HasAccount == false) 
         {
-            return NotFound("У юзера с id {userId} нет открытых счетов");
+            return NotFound($"У юзера с id {userId} нет открытых счетов");
         }
         List<Account> accountsById = _accounts.FindAll(account => account.UserId == userId);
         return Ok(accountsById);
     }
-    [HttpPost]
+    [HttpPost("replenish")]
     public IActionResult Replenish(int userId, int simpleId, double amount)
     {
         Account? accountToReplenish = _accounts.FirstOrDefault(account => userId == account.UserId && simpleId == account.SimpleId);
@@ -49,7 +55,7 @@ public class AccountsController : ControllerBase
         accountToReplenish.Balance = accountToReplenish.Balance + amount;
         return Ok($"Аккаунт успешно пополнен, текущий баланс: {accountToReplenish.Balance}");
     }
-    [HttpPost]
+    [HttpPost("withdrawal")]
     public IActionResult Withdrawal(int userId, int simpleId, double amount)
     {
         Account? accountToWithdraw = _accounts.FirstOrDefault(account => userId == account.UserId && simpleId == account.SimpleId);

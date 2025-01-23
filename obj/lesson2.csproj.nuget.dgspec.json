@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj": {}
+    "/Users/kaspi/Downloads/Homework2-main/lesson2.csproj": {}
   },
   "projects": {
-    "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj": {
+    "/Users/kaspi/Downloads/Homework2-main/lesson2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj",
+        "projectUniqueName": "/Users/kaspi/Downloads/Homework2-main/lesson2.csproj",
         "projectName": "lesson2",
-        "projectPath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj",
-        "packagesPath": "/Users/janny/.nuget/packages/",
-        "outputPath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/obj/",
+        "projectPath": "/Users/kaspi/Downloads/Homework2-main/lesson2.csproj",
+        "packagesPath": "/Users/kaspi/.nuget/packages/",
+        "outputPath": "/Users/kaspi/Downloads/Homework2-main/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/janny/.nuget/NuGet/NuGet.Config"
+          "/Users/kaspi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://kkz-reps.hq.bc/repository/nuget-group/index.json": {},
+          "https://kkz-reps.hq.bc/repository/nuget-hosted/index.json": {},
+          "https://repka.kaspi.kz/repository/nuget-hosted/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -32,11 +35,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

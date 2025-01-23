@@ -465,9 +465,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj",
-      "projectName": "lesson2",
-      "projectPath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/lesson2.csproj",
+      "projectUniqueName": "/Users/janny/Desktop/LessonsWithIskander/Homework2/homework2.csproj",
+      "projectName": "homework2",
+      "projectPath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/homework2.csproj",
       "packagesPath": "/Users/janny/.nuget/packages/",
       "outputPath": "/Users/janny/Desktop/LessonsWithIskander/Homework2/obj/",
       "projectStyle": "PackageReference",
